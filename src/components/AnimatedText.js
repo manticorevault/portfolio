@@ -1,4 +1,32 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+
+const quote = {
+    initial: {
+        opacity: 1,
+    },
+    animate: {
+        opacity: 1,
+        transition: {
+            delay: 0.5,
+            staggerChildren: 0.08,
+        }
+    }
+}
+
+const singleWord = {
+    initial: {
+        opacity: 0,
+        y: 50,
+    },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 1,
+        }
+    }
+}
 
 const AnimatedText = ({ text, className="" }) => {
   return (
@@ -7,16 +35,22 @@ const AnimatedText = ({ text, className="" }) => {
                     overflow-hidden
         "   
     >
-        <h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl${className}`}>
+        <motion.h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl${className}`}
+            variants={ quote }
+            initial="initial"
+            animate="animate"
+        >
            {
                text.split(" ").map((word, index) =>
-                <span key={ word+'-'+index } className="inline-block">
+                <motion.span key={ word+'-'+index } className="inline-block"
+                    variants={singleWord}
+                >
                     { word }&nbsp;
-                </span>
+                </motion.span>
                )
 
            } 
-        </h1>
+        </motion.h1>
     </div>
   )
 }
