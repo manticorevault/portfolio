@@ -1,5 +1,6 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
+import HireMe from '@/components/HireMe'
 import Head from 'next/head'
 import Image from 'next/image'
 import profile from "../../public/images/profile/arturprofile-side.png"
@@ -44,7 +45,7 @@ export default function Home() {
                 </Link>
 
                 <Link 
-                  href="/mailto:artur.aserra@gmail.com"
+                  href="https://t.me/+5511983355231"
                   className='ml-4 text-lg font-medium capitalize text-dark underline'   
                 >
                   Contact
