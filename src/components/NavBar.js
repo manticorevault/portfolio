@@ -2,8 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
-import { TwitterIcon, GithubIcon, LinkedInIcon } from './Icons'
+import { TwitterIcon, GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from './Icons'
 import { motion } from 'framer-motion'
+import useThemeSwitcher from './hooks/useThemeSwitcher'
 
 const CustomLink =({ href, title, className="" }) => {
 
@@ -27,6 +28,9 @@ const CustomLink =({ href, title, className="" }) => {
 }
 
 const NavBar = () => {
+
+    const [mode, setMode] = useThemeSwitcher();
+
   return (
     <header
         className="w-full px-32 py-8 font-medium flex items-center justify-between"
@@ -38,7 +42,7 @@ const NavBar = () => {
 
             <CustomLink href="/projects" title="Projects" className="mx-4"/>
 
-            <CustomLink href="/articles" title="Articles" className="ml-4"/>
+            <CustomLink href="https://therustyco.de/" target={"_blank"} title="Blog" className="ml-4"/>
         </nav>
 
         <nav className='flex items-center justify-center flex-wrap'>

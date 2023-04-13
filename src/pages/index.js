@@ -26,7 +26,7 @@ export default function Home() {
             </div>
 
             <div className="w-1/2 flex flex-col items-center self-center">
-              <AnimatedText text="Crafting reliable solutions with quality code" className=' !text-left'/>
+              <AnimatedText text="Reliable solutions, quality code" className=' !text-left'/>
               <p className='my-4 text-base font-medium'>
                 Cybersecurity graduate turned full-stack developer with a knack for blockchain development, focused on building secure and dynamic digital applications.
               </p>
