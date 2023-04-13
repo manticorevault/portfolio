@@ -5,6 +5,9 @@ import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import aboutProfile from "../../public/images/profile/arturprofile-business.jpg"
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 
 const AnimatedNumbers = ({ value }) => {
 
@@ -105,6 +108,12 @@ const about = () => {
                             </h2>
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <Skills />
+                    <Experience />
+                    <Education />
                 </div>
             </Layout>
         </main>
