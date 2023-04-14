@@ -76,6 +76,8 @@ const about = () => {
                             src={aboutProfile} alt="Artur Serra" className="w-full h-auto rounded-2xl border-2 border-dark
                                 bg-light p-8
                             "
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
 

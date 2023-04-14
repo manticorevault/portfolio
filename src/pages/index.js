@@ -22,11 +22,15 @@ export default function Home() {
                 src={profile}
                 alt="Artur Serra"
                 className="h-full w-auto"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
 
             <div className="w-1/2 flex flex-col items-center self-center">
-              <AnimatedText text="Reliable solutions, quality code" className=' !text-left'/>
+              <AnimatedText text="Designing reliable solutions, crafting quality code" 
+                            className=' !text-center lg:!text-6xl lg:!text-left xl:!text-5xl 
+              '/>
               <p className='my-4 text-base font-medium'>
                 Cybersecurity graduate turned full-stack developer with a knack for blockchain development, focused on building secure and dynamic digital applications.
               </p>
